@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{01e4028a-f346-43b7-8d6e-765ee3f84564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Buttons">
+      <UniqueIdentifier>{00cbe47e-0a32-4295-94ac-d4e53c985873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Font Types">
+      <UniqueIdentifier>{6a7e2338-9c87-400a-bd72-e4c79243eb2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Sprites">
+      <UniqueIdentifier>{6a8e3429-16b1-41b5-80f7-f4d023ec4651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Vertices and Fragments">
+      <UniqueIdentifier>{07c06b98-751b-4fa3-b8e1-9702cf4f63cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{49d8543e-2cdc-4165-94c7-d0be2a1c98fa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Demo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerScript.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIMainMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="gameObject.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteHandler.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="UIHandler.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMainMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGameplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIPause.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIPauseMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIGameOver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIGameOverMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Background.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIScore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIScoreCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Virus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="crateSprite.frag">
+      <Filter>Resource Files\Vertices and Fragments</Filter>
+    </None>
+    <None Include="crateSprite.vert">
+      <Filter>Resource Files\Vertices and Fragments</Filter>
+    </None>
+    <None Include="playerSprite.frag">
+      <Filter>Resource Files\Vertices and Fragments</Filter>
+    </None>
+    <None Include="playerSprite.vert">
+      <Filter>Resource Files\Vertices and Fragments</Filter>
+    </None>
+    <None Include="shader.frag">
+      <Filter>Resource Files\Vertices and Fragments</Filter>
+    </None>
+    <None Include="shader.vert">
+      <Filter>Resource Files\Vertices and Fragments</Filter>
+    </None>
+    <None Include="spriteAnim.frag">
+      <Filter>Resource Files\Vertices and Fragments</Filter>
+    </None>
+    <None Include="spriteAnim.vert">
+      <Filter>Resource Files\Vertices and Fragments</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="button_halt.png">
+      <Filter>Resource Files\Buttons</Filter>
+    </Image>
+    <Image Include="button_halt_hover.png">
+      <Filter>Resource Files\Buttons</Filter>
+    </Image>
+    <Image Include="button_opt.png">
+      <Filter>Resource Files\Buttons</Filter>
+    </Image>
+    <Image Include="button_opt_hover.png">
+      <Filter>Resource Files\Buttons</Filter>
+    </Image>
+    <Image Include="button_play.png">
+      <Filter>Resource Files\Buttons</Filter>
+    </Image>
+    <Image Include="button_play_hover.png">
+      <Filter>Resource Files\Buttons</Filter>
+    </Image>
+    <Image Include="crate.png">
+      <Filter>Resource Files\Sprites</Filter>
+    </Image>
+    <Image Include="homeranim.png">
+      <Filter>Resource Files\Sprites</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="hongkonghustle.ttf">
+      <Filter>Resource Files\Font Types</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerScript.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIMainMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="gameObject.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteHandler.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="UIHandler.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMainMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneHandler.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGameplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIPause.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIPauseMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIGameOver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIGameOverMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Background.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIScore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIScoreCounter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Virus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

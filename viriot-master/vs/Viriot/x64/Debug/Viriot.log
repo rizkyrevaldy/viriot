@@ -1,0 +1,30 @@
+﻿  Background.cpp
+c:\users\rizky revaldy\documents\viriot\viriot-master\vs\viriot\spritehandler.h(4): fatal error C1083: Cannot open include file: 'SDL/SDL.h': No such file or directory
+  Bullet.cpp
+c:\users\rizky revaldy\documents\viriot\viriot-master\vs\viriot\spritehandler.h(4): fatal error C1083: Cannot open include file: 'SDL/SDL.h': No such file or directory
+  Demo.cpp
+c:\users\rizky revaldy\documents\viriot\viriot-master\vs\viriot\game.h(4): fatal error C1083: Cannot open include file: 'SDL/SDL.h': No such file or directory
+  Game.cpp
+c:\users\rizky revaldy\documents\viriot\viriot-master\vs\viriot\game.h(4): fatal error C1083: Cannot open include file: 'SDL/SDL.h': No such file or directory
+  gameObject.cpp
+c:\users\rizky revaldy\documents\viriot\viriot-master\vs\viriot\spritehandler.h(4): fatal error C1083: Cannot open include file: 'SDL/SDL.h': No such file or directory
+  Virus.cpp
+c:\users\rizky revaldy\documents\viriot\viriot-master\vs\viriot\spritehandler.h(4): fatal error C1083: Cannot open include file: 'SDL/SDL.h': No such file or directory
+  PlayerScript.cpp
+c:\users\rizky revaldy\documents\viriot\viriot-master\vs\viriot\spritehandler.h(4): fatal error C1083: Cannot open include file: 'SDL/SDL.h': No such file or directory
+  SceneGameplay.cpp
+c:\users\rizky revaldy\documents\viriot\viriot-master\vs\viriot\spritehandler.h(4): fatal error C1083: Cannot open include file: 'SDL/SDL.h': No such file or directory
+  SceneHandler.cpp
+  SpriteHandler.cpp
+c:\users\rizky revaldy\documents\viriot\viriot-master\vs\viriot\spritehandler.h(4): fatal error C1083: Cannot open include file: 'SDL/SDL.h': No such file or directory
+  UIGameOver.cpp
+c:\users\rizky revaldy\documents\viriot\viriot-master\vs\viriot\uigameover.h(4): fatal error C1083: Cannot open include file: 'SDL/SDL.h': No such file or directory
+  UIGameOverMenu.cpp
+c:\users\rizky revaldy\documents\viriot\viriot-master\vs\viriot\uigameover.h(4): fatal error C1083: Cannot open include file: 'SDL/SDL.h': No such file or directory
+  UIHandler.cpp
+c:\users\rizky revaldy\documents\viriot\viriot-master\vs\viriot\uihandler.h(4): fatal error C1083: Cannot open include file: 'SDL/SDL.h': No such file or directory
+  UIPause.cpp
+c:\users\rizky revaldy\documents\viriot\viriot-master\vs\viriot\uipause.h(4): fatal error C1083: Cannot open include file: 'SDL/SDL.h': No such file or directory
+  UIPauseMenu.cpp
+c:\users\rizky revaldy\documents\viriot\viriot-master\vs\viriot\uipause.h(4): fatal error C1083: Cannot open include file: 'SDL/SDL.h': No such file or directory
+  Generating Code...
