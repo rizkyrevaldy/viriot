@@ -44,15 +44,19 @@ void SceneGameplay::Init() {
 		switch (tempHealth)
 		{
 		case 2:
+			tempPoin = 5;
 			tempvirusType = "virus_ijo";
 			break;
 		case 1:
+			tempPoin = 10;
 			tempvirusType = "virus_ungu";
 			break;
 		case 0:
+			tempPoin = 15;
 			tempvirusType = "virus_merah";
 			break;
 		default:
+			tempPoin = 15;
 			tempvirusType = "virus_merah";
 			break;
 		}
@@ -66,7 +70,7 @@ void SceneGameplay::Init() {
 	}
 
 	bg = Background("bg", "crateSprite", startPos::CENTER, screenWidth, screenHeight, 1, 1);
-	bannerGameOver = Background("gameOverBanner", "crateSprite", startPos::CENTER, screenWidth, screenHeight, 1, 1);
+	bannerGameOver = Background("gameover", "crateSprite", startPos::CENTER, screenWidth, screenHeight, 1, 1);
 	bannerGameOver.ypos -= 150;
 	logoGame = Background("logo", "crateSprite", startPos::CENTER_TOP, screenWidth, screenHeight, 1, 1);
 	logoGame.ypos += 50;

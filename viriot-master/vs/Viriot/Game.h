@@ -2,6 +2,7 @@
 #define GAME_H
 
 #include <SDL/SDL.h>
+#include <SDL/SDL_mixer.h>
 #include <GL/glew.h>
 #include <string>
 #include <fstream>
@@ -48,6 +49,7 @@ namespace Engine {
 		virtual void Render() = 0;
 		unsigned int GetScreenHeight();
 		unsigned int GetScreenWidth();
+		void Err(string errorString);
 	
 	
 	private:
@@ -62,7 +64,6 @@ namespace Engine {
 		float GetDeltaTime();
 		void GetFPS();
 		void PollInput();
-		void Err(string errorString);
 		void LimitFPS();
 		void CheckShaderErrors(GLuint shader, string type);
 		void PrintFPS();

@@ -21,8 +21,8 @@ UIPauseMenu::~UIPauseMenu()
 
 void UIPauseMenu::Init()
 {
-	string buttons[NUM_BUTTON_PAUSE] = { "resumebtn.png", "restartbtn.png", "exitbtn.png" };
-	string hover_buttons[NUM_BUTTON_PAUSE] = { "resumebtn.png", "restartbtn.png", "exitbtn.png" };
+	string buttons[NUM_BUTTON_PAUSE] = { "resume.png", "restart.png", "exit.png" };
+	string hover_buttons[NUM_BUTTON_PAUSE] = { "resume.png", "restart.png", "exit.png" };
 	this->program = BuildShader("shader.vert", "shader.frag");
 	InitText();
 	InitButton(buttons, hover_buttons);

@@ -9,11 +9,23 @@ Demo::Demo()
 
 Demo::~Demo()
 {
+	
+	if (Mix_Playing(sfx_channel) == 0) {
+		Mix_FreeChunk(sound);
+	}
+	/*
+	if (music != NULL) {
+		Mix_FreeMusic(music);
+	}
+	*/
+	Mix_CloseAudio();
+	
 }
 
 void Demo::Init()
 {
 	InputMapping();
+	InitAudio();
 	Sgameplay = SceneGameplay(GetScreenWidth(),GetScreenHeight());
 	
 }
@@ -34,6 +46,38 @@ void Demo::Update(float deltaTime)
 		Sgameplay.Update(deltaTime);
 	}
 	
+	if (Mix_Playing(sfx_channel) == 0 && IsKeyDown("Shoot")) {
+		sfx_channel = Mix_PlayChannel(-1, sound, 0);
+		if (sfx_channel == -1) {
+			Err("Unable to play WAV file: " + string(Mix_GetError()));
+		}
+	}
+	/*
+	if (Mix_PlayingMusic() == 0)
+	{
+		//Play the music
+		Mix_PlayMusic(music, -1);
+		SDL_Delay(150);
+	}
+	//If music is being played
+	else
+	{
+		//If the music is paused
+		if (Mix_PausedMusic() == 1)
+		{
+			//Resume the music
+			Mix_ResumeMusic();
+			SDL_Delay(150);
+		}
+		//If the music is playing
+		else
+		{
+			//Pause the music
+			Mix_PauseMusic();
+			SDL_Delay(150);
+		}
+	}
+	*/
 	
 }
 
@@ -169,6 +213,32 @@ void Demo::InputMapping() {
 	Engine::Game::InputMapping("Quit", SDLK_ESCAPE);
 	Engine::Game::InputMapping("Shoot", SDLK_SPACE);
 	
+
+}
+
+void Demo::InitAudio() {
+	int flags = MIX_INIT_MP3 | MIX_INIT_FLAC | MIX_INIT_OGG;
+	if (flags != Mix_Init(flags)) {
+		Err("Unable to initialize mixer: " + string(Mix_GetError()));
+	}
+
+	int audio_rate = 44100; Uint16 audio_format = AUDIO_S16SYS; int audio_channels = 1; int audio_buffers = 2048;
+
+	if (Mix_OpenAudio(audio_rate, audio_format, audio_channels, audio_buffers) != 0) {
+		Err("Unable to initialize audio: " + string(Mix_GetError()));
+	}
+
+	/*
+	music = Mix_LoadMUS("bensound-funkyelement.ogg");
+	if (music == NULL) {
+		Err("Unable to load Music file: " + string(Mix_GetError()));
+	}
+	*/
+	sound = Mix_LoadWAV("Omega-Pulse2.wav");
+	if (sound == NULL) {
+		Err("Unable to load WAV file: " + string(Mix_GetError()));
+	}
+
 
 }
 

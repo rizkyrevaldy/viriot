@@ -21,8 +21,8 @@ UIGameOverMenu::~UIGameOverMenu()
 
 void UIGameOverMenu::Init()
 {
-	string buttons[NUM_BUTTON] = {  "restartbtnGO.png", "exitbtnGO.png" };
-	string hover_buttons[NUM_BUTTON] = { "restartbtnGO_hover.png", "exitbtnGO_hover.png" };
+	string buttons[NUM_BUTTON] = {  "restart.png", "exit.png" };
+	string hover_buttons[NUM_BUTTON] = { "restart.png", "exit.png" };
 	this->program = BuildShader("shader.vert", "shader.frag");
 	InitText();
 	InitButton(buttons, hover_buttons);

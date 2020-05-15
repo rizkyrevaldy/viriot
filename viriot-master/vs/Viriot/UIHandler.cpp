@@ -29,50 +29,12 @@ void UIHandler::DeInit() {
 
 void UIHandler::Update(float deltaTime)
 {
-	/*if (IsKeyDown("SelectButton")) {
-		if (activeButtonIndex == 2) {
-			SDL_Quit();
-			exit(0);
-		}
-	}
-
-	if (IsKeyUp("NextButton")) {
-		if (activeButtonIndex < NUM_BUTTON - 1) {
-			activeButtonIndex = activeButtonIndex + 1;
-			SDL_Delay(150);
-		}
-	}
-
-	if (IsKeyUp("PrevButton")) {
-		if (activeButtonIndex > 0) {
-			activeButtonIndex = activeButtonIndex - 1;
-			SDL_Delay(150);
-		}
-	}*/
 
 }
 
 void UIHandler::Render()
 {
-	////Setting Viewport
-	//glViewport(0, 0, screenWidth, screenHeight);
-
-	////Clear the color and depth buffer
-	//glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-	////Set the background color
-	//glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-
-	// Set orthographic projection -> untuk dapat menampilkan text
-	/*mat4 projection;
-	projection = ortho(0.0f, static_cast<GLfloat>(screenWidth*1.0f), static_cast<GLfloat>(screenHeight*1.0f), 0.0f, -1.0f, 1.0f);
-	glUniformMatrix4fv(glGetUniformLocation(this->program, "projection"), 1, GL_FALSE, value_ptr(projection));*/
-
-	// draw
-	//RenderText("Dutsio Studio", screenWidth / 2, 10, 1.0f, vec3(244.0f / 255.0f, 12.0f / 255.0f, 116.0f / 255.0f), true);
-
-	//RenderButton();
-
+	
 }
 
 // inisialisasi text (kotak/objek text lebih tepatnya belum termasuk isi string di dalamnya)
